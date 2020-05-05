@@ -1,6 +1,8 @@
 # DEPEProject
 
 Repository name: DEPEProject
-Project title: Slot Machine
+Project title: Dice Game
 Description:
-The game is a python project program that simulates how a slot machine is played. The player makes a turn and the program will output the combinations. The player can win or lose based on the output of the program. The program has a variety of winning combinations.
+The game is a python project program that simulates rolling of the dice. The program enables the player to play against the computer. 
+Each one is given a turn to roll the dice. After the player inputs his/her turn, the computer will then generate its random turn.The 
+one who gets the higher number in the dice is declared the winner.
