@@ -1,0 +1,25 @@
+@startuml
+
+skinparam packageStyle rectangle
+Actor Player
+rectangle Computer_Program{
+(Import Exit) -->(Import Random)
+(Import Random)-->(Import Time)
+(Player)-->(Input Name)
+(Import Time)-->(Sets Player Name)
+(Sets Player Name)-->(Makes Turn):Yes
+(Continue?)-->(End):No
+(Input Name)-->(Makes Turn)
+(Makes Turn)-->(Min, Max)
+(Min, Max)-->(Output)
+(Output)-->(Win):Player has higher Value
+(Output)-->(Lose):Computer has higher Value
+(Output)-->(Tie):Same value
+(Win)-->(Continue?)
+(Lose)-->(Continue?)
+(Tie)-->(Continue?)
+(Continue?)-->(Sets Player Name):yes
+
+
+
+@enduml
