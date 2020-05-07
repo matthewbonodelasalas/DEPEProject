@@ -19,6 +19,7 @@ rectangle Computer_Program{
 (Lose)-->(Continue?)
 (Tie)-->(Continue?)
 (Continue?)-->(Sets Player Name):yes
+(Continue?)-->(Input Name):yes
 
 
 
