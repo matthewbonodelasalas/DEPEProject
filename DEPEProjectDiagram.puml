@@ -1,0 +1,21 @@
+@startuml
+
+skinparam packageStyle rectangle
+Actor Player
+rectangle Computer_Program{
+(Import tkinter) -->(Import Random)
+(Import Random)-->(Import Time)
+(Import Time)-->(initialization)
+(initialization)-->(Draw Board)
+(Draw Board)-->(Start time)
+(Player)-->(Input)
+(Start time)-->(Input)
+(Input)-->(Hide Tiles):tiles don't match
+(Input)-->(Draw Board Tiles):If tiles match, draw board
+(Hide Tiles)-->(Input)
+(Draw Board Tiles)-->(Win):Board completed
+(Draw Board Tiles)-->(Input):until Board completed
+(Win)-->(Time)
+
+
+@enduml
